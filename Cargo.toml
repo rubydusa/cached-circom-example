@@ -1,0 +1,13 @@
+[package]
+name = "cached-circom-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lalrpop-util = { version = "0.18.1", features = ["lexer"] }
+circom_parser = { git = "https://github.com/rubydusa/circom", branch = "cacheing", package = "parser" }
+circom_structure = { git = "https://github.com/rubydusa/circom", branch = "cacheing", package = "program_structure" }
+
+
